@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(221, 221, 221, 0.486);
+    
+}
+.menu{
+    background-color: rgb(15, 207, 255);
+}
+.menu ul{
+    text-align: center;
+    
+    
+    
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.menu ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;  
+    color: blueviolet;  
+    border-right: 1px solid rgb(24, 151, 255);
+    
+    
+}
+.menu ul li:first-child a{
+    border-left: 1px solid rgb(24, 151, 255);
+}
+
+            /* Dopdown Menu */
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul{
+    position: absolute;
+    left: -1px;
+    top: 100%;
+    width: 250px;
+    background-color: rgb(15, 207, 255);
+    border-top: 1px solid rgb(24, 151, 255);
+}
+.menu ul li ul li{
+    display: block;
+    margin-left: 0;
+    
+    
+}
+.menu ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(24, 151, 255);
+    font-size: 15px;
+    
+}
+.menu ul li ul li:first-child a{
+    border-left: 0;
+}
+
+
+        /* CSS Before After */
+.before-after-heading{
+    color: #bd0d5f;
+    text-align: center;
+}
+.before-after-subheading{
+    color: #0077ff;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.lorem{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.click-link{
+    text-align: center;
+    margin-top: 50px;
+}
+.click-here{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c5ce7;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+    
+}
+.click-here::before{
+    content: "";
+    background-color: #2d3436;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: .4s;
+    z-index: -1;
+}
+
+.click-here:hover::before{
+    width: 100%;
+    
+}
+
+
+        /* Hover Part */
+
+.menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaley(0);
+    transform-origin: top center;
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: .6s;
+    transform: scaley(1);
+}
+.menu ul li:hover>a{
+    background: rgb(134, 173, 204);
+}
+
+
+        /* Icon part */
+.icon{
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+.icon ul{
+    text-align: center;
+    
+}
+.icon ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.icon ul li a{
+    font-size: 35px;
+    background-color: rgb(228, 225, 225);
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+
+}
+
+/* icon color */
+.whatsapp{
+    color: #02c222;
+}
+.twitter{
+    color: #1DA1F2;
+}
+.instagram{
+    color: #bd0d5f;
+}
+.linkedin{
+    color: #0077b5;
+}
+.soundcloud{
+    color: #ff8800;
+}
+.snapchat{
+    color: #e4e00b;
+}
+.tiktok{
+    color: #382929;
+}
+.paypal{
+    color: #103dd1;
+}
+.github{
+    color: #000000;
+}
+.youtube{
+    color: rgb(228, 18, 18);
+}
+.img{
+    padding: 20px;
+    border: 50px;
+    
+}
+.img img:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+        
+/* Transform hover on social icon */
+
+.whatsapp:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.instagram:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.twitter:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.linkedin:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.soundcloud:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.snapchat:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.tiktok:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.paypal:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.github:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.youtube:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
