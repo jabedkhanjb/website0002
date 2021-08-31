@@ -242,3 +242,6 @@ body{
     transform: rotate(360deg);
     transition: .3s;
 }
+
+    /* Responsive design*/
+@media only screen and (max:width: 700px)
